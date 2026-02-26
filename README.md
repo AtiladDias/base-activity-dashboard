@@ -34,6 +34,7 @@ Designed to help users explore their onchain footprint and understand their beha
 
 ---
 
+```
 ## 🧱 Architecture
 
 base-activity-dashboard/
@@ -47,6 +48,7 @@ base-activity-dashboard/
 ├─ next.config.js
 ├─ README.md
 └─ tsconfig.json
+```
 
 ### Tech Stack
 - **Next.js 14**
