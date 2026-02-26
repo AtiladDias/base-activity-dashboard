@@ -12,7 +12,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "viem": "^2.7.0",
-    "wagmi": "^2.5.0"
+    "wagmi": "^2.5.0",
     "@rainbow-me/rainbowkit": "^2.2.0"
   },
   "devDependencies": {
