@@ -2,40 +2,29 @@ import type { AppProps } from 'next/app';
 import '@rainbow-me/rainbowkit/styles.css';
 
 import {
-  getDefaultWallets,
   RainbowKitProvider,
   darkTheme,
+  getDefaultConfig,
 } from '@rainbow-me/rainbowkit';
 
-import { WagmiConfig, configureChains, createConfig } from 'wagmi';
+import { WagmiConfig } from 'wagmi';
 import { base, baseSepolia } from 'wagmi/chains';
-import { http } from 'viem';
 
-const { chains, publicClient } = configureChains(
-  [base, baseSepolia], // use Base mainnet e testnet
-  [http()] // usa RPC público por enquanto; depois podemos configurar Alchemy/Infura
-);
+// ⚠️ Quando puder, crie um Project ID gratuito no WalletConnect e troque a string abaixo.
+const WALLETCONNECT_PROJECT_ID = process.env.NEXT_PUBLIC_WC_PROJECT_ID || 'demo';
 
-const { connectors } = getDefaultWallets({
+// RainbowKit v2 + Wagmi v2: cria a config completa (sem configureChains)
+const config = getDefaultConfig({
   appName: 'Base Activity Dashboard',
-  projectId: 'wagmi', // pode substituir por um WalletConnect Project ID depois
-  chains
-});
-
-const wagmiConfig = createConfig({
-  autoConnect: true,
-  connectors,
-  publicClient,
+  projectId: WALLETCONNECT_PROJECT_ID,
+  chains: [base, baseSepolia],
+  ssr: true, // Next.js
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <WagmiConfig config={wagmiConfig}>
-      <RainbowKitProvider
-        chains={chains}
-        theme={darkTheme({ borderRadius: 'small' })}
-        modalSize="compact"
-      >
+    <WagmiConfig config={config}>
+      <RainbowKitProvider theme={darkTheme({ borderRadius: 'small' })} modalSize="compact">
         <Component {...pageProps} />
       </RainbowKitProvider>
     </WagmiConfig>
