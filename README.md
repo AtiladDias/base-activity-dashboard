@@ -75,10 +75,11 @@ It is intentionally simple — built fast, open, and iterated in public.
 
 ---
 
+
 ## 🌐 Live Demo
 
-> **Coming soon**  
-Once published to Vercel, the live link will be added here.
+👉 [base-activity-dashboard.vercel.app](https://base-activity-dashboard.vercel.app)
+
 
 ---
 
