@@ -39,14 +39,24 @@ Designed to help users explore their onchain footprint and understand their beha
 
 base-activity-dashboard/
 ├─ src/
-│   ├─ components/
-│   ├─ lib/
-│   ├─ pages/ or app/ (Next.js)
-│   └─ styles/
-├─ public/
-├─ package.json
-├─ next.config.js
+│  ├─ components/
+│  │  ├─ ActivitySummary.tsx
+│  │  └─ WalletConnectButton.tsx
+│  │
+│  ├─ lib/
+│  │  ├─ getTransactions.ts
+│  │  ├─ protocolMap.ts
+│  │  └─ score.ts
+│  │
+│  └─ pages/
+│     ├─ _app.tsx
+│     └─ index.tsx
+│
+├─ .gitignore
+├─ LICENSE
 ├─ README.md
+├─ next.config.js
+├─ package.json
 └─ tsconfig.json
 ```
 
