@@ -13,9 +13,9 @@
     "iconUrl": "https://base-activity-dashboard.vercel.app/icon.png",
     "homeUrl": "https://base-activity-dashboard.vercel.app",
     "imageUrl": "https://base-activity-dashboard.vercel.app/og.png",
-    "primaryCategory": "tools",
+    "primaryCategory": "developer-tools",
     "tags": ["base", "onchain", "airdrop", "builder"],
-    "ogTitle": "TheDias — Base Activity Dashboard",
+    "ogTitle": "Base Activity by TheDias",
     "ogDescription": "Analyze your Base ecosystem interactions and track your onchain reputation.",
     "ogImageUrl": "https://base-activity-dashboard.vercel.app/og.png"
   }
