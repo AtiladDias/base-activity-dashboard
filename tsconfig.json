@@ -6,8 +6,12 @@
     "moduleResolution": "bundler",
     "jsx": "preserve",
     "strict": true,
+
     "baseUrl": ".",
-    "paths": {},
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
