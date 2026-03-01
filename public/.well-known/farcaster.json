@@ -1,0 +1,14 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "TheDias",
+    "iconUrl": "https://base-activity-dashboard.vercel.app/icon.png",
+    "homeUrl": "https://base-activity-dashboard.vercel.app",
+    "imageUrl": "https://base-activity-dashboard.vercel.app/og.png"
+  }
+}
