@@ -7,8 +7,16 @@
   "miniapp": {
     "version": "1",
     "name": "TheDias",
+    "subtitle": "Onchain Activity Dashboard",
+    "description": "Track your onchain activity, protocols used and build your Base reputation score.",
+    "tagline": "Turn activity into reputation.",
     "iconUrl": "https://base-activity-dashboard.vercel.app/icon.png",
     "homeUrl": "https://base-activity-dashboard.vercel.app",
-    "imageUrl": "https://base-activity-dashboard.vercel.app/og.png"
+    "imageUrl": "https://base-activity-dashboard.vercel.app/og.png",
+    "primaryCategory": "tools",
+    "tags": ["base", "onchain", "airdrop", "builder"],
+    "ogTitle": "TheDias — Base Activity Dashboard",
+    "ogDescription": "Analyze your Base ecosystem interactions and track your onchain reputation.",
+    "ogImageUrl": "https://base-activity-dashboard.vercel.app/og.png"
   }
 }
